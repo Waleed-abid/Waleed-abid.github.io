@@ -3,52 +3,345 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Name - Portfolio</title>
+    <title>Waleed Abid - Senior Technology Executive</title>
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
       body {
-        font-family: Arial, sans-serif;
-        padding: 2rem;
-        max-width: 800px;
-        margin: auto;
-      }
-      h1 {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
         color: #333;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
       }
-      a {
-        color: #0366d6;
+
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 2rem;
+        background: white;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 3rem;
+        padding-bottom: 2rem;
+        border-bottom: 3px solid #667eea;
+      }
+
+      .header h1 {
+        font-size: 3rem;
+        color: #2c3e50;
+        margin-bottom: 0.5rem;
+        font-weight: 700;
+      }
+
+      .header .title {
+        font-size: 1.5rem;
+        color: #667eea;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+
+      .header .experience {
+        font-size: 1.2rem;
+        color: #7f8c8d;
+        font-weight: 500;
+      }
+
+      .summary {
+        background: #f8f9fa;
+        padding: 2rem;
+        border-radius: 10px;
+        margin-bottom: 3rem;
+        border-left: 5px solid #667eea;
+      }
+
+      .summary h2 {
+        color: #2c3e50;
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+      }
+
+      .summary p {
+        font-size: 1.1rem;
+        color: #555;
+        line-height: 1.8;
+      }
+
+      .experience-section h2 {
+        color: #2c3e50;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      .timeline {
+        position: relative;
+        padding-left: 2rem;
+      }
+
+      .timeline::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        background: #667eea;
+      }
+
+      .job {
+        position: relative;
+        margin-bottom: 2.5rem;
+        padding: 1.5rem;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        border-left: 4px solid #667eea;
+      }
+
+      .job::before {
+        content: "";
+        position: absolute;
+        left: -2.5rem;
+        top: 2rem;
+        width: 12px;
+        height: 12px;
+        background: #667eea;
+        border-radius: 50%;
+        border: 3px solid white;
+        box-shadow: 0 0 0 3px #667eea;
+      }
+
+      .job-title {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 0.5rem;
+      }
+
+      .company {
+        font-size: 1.2rem;
+        color: #667eea;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+
+      .duration {
+        font-size: 0.9rem;
+        color: #7f8c8d;
+        font-weight: 500;
+        margin-bottom: 1rem;
+      }
+
+      .description {
+        color: #555;
+        line-height: 1.7;
+      }
+
+      .contact {
+        text-align: center;
+        margin-top: 3rem;
+        padding-top: 2rem;
+        border-top: 2px solid #ecf0f1;
+      }
+
+      .contact h3 {
+        color: #2c3e50;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+      }
+
+      .contact a {
+        color: #667eea;
         text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s ease;
       }
-      .project {
-        margin-bottom: 1.5rem;
+
+      .contact a:hover {
+        color: #5a6fd8;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          margin: 1rem;
+          padding: 1rem;
+        }
+
+        .header h1 {
+          font-size: 2rem;
+        }
+
+        .header .title {
+          font-size: 1.2rem;
+        }
+
+        .timeline {
+          padding-left: 1rem;
+        }
+
+        .job::before {
+          left: -1.5rem;
+        }
       }
     </style>
   </head>
   <body>
-    <h1>Your Name</h1>
-    <p>👋 I'm a developer/designer/etc. Here's a selection of my work:</p>
+    <div class="container">
+      <div class="header">
+        <h1>Waleed Abid</h1>
+        <div class="title">
+          Senior Technology Executive & Solutions Architect
+        </div>
+        <div class="experience">
+          18+ Years of Technology Leadership Experience
+        </div>
+      </div>
 
-    <div class="project">
-      <h2>Project One</h2>
-      <p>
-        Description of the project.
-        <a href="https://github.com/yourusername/project1" target="_blank"
-          >View on GitHub</a
-        >
-      </p>
+      <div class="summary">
+        <h2>Professional Summary</h2>
+        <p>
+          Seasoned technology executive with over 18 years of experience driving
+          digital transformation, leading engineering teams, and delivering
+          innovative solutions across diverse industries. Proven track record of
+          strategic leadership, technical architecture, and business development
+          at Fortune 500 companies including Amazon, Apple, McKinsey, and
+          Maersk. Expert in digital transformation, enterprise architecture, and
+          building scalable technology solutions.
+        </p>
+      </div>
+
+      <div class="experience-section">
+        <h2>Professional Experience</h2>
+        <div class="timeline">
+          <div class="job">
+            <div class="job-title">Vice President of Engineering</div>
+            <div class="company">Maersk</div>
+            <div class="duration">2023 - January 2025</div>
+            <div class="description">
+              Led engineering teams and technology strategy for one of the
+              world's largest shipping and logistics companies. Drove digital
+              transformation initiatives and oversaw the development of
+              innovative logistics solutions.
+            </div>
+          </div>
+
+          <div class="job">
+            <div class="job-title">Senior Solutions Architect</div>
+            <div class="company">McKinsey & Company</div>
+            <div class="duration">2019 - Present</div>
+            <div class="description">
+              Providing strategic technology consulting to Fortune 500 clients,
+              specializing in digital transformation, enterprise architecture,
+              and technology strategy. Leading complex transformation projects
+              and advising C-suite executives on technology investments and
+              digital initiatives.
+            </div>
+          </div>
+
+          <div class="job">
+            <div class="job-title">
+              Director General for Carrefour Development
+            </div>
+            <div class="company">Majid Al Futtaim</div>
+            <div class="duration">February 2018 - 2023</div>
+            <div class="description">
+              Led digital transformation and technology development for
+              Carrefour retail operations across the MENA region. Oversaw
+              e-commerce platforms, digital customer experience, and retail
+              technology innovation. Managed large-scale technology projects and
+              digital strategy implementation.
+            </div>
+          </div>
+
+          <div class="job">
+            <div class="job-title">Vice Director of Engineering</div>
+            <div class="company">Apple</div>
+            <div class="duration">December 2016 - December 2018</div>
+            <div class="description">
+              Led engineering teams in developing cutting-edge technology
+              solutions and products. Managed complex technical projects,
+              oversaw product development lifecycle, and collaborated with
+              cross-functional teams to deliver innovative solutions.
+            </div>
+          </div>
+
+          <div class="job">
+            <div class="job-title">Systems Architect (Freelance)</div>
+            <div class="company">Upwork</div>
+            <div class="duration">2013 - 2017</div>
+            <div class="description">
+              Provided independent consulting services as a Systems Architect
+              for global corporations including BlackRock and Microsoft.
+              Developed and sold Microsoft an internal system to integrate
+              Docker with their Azure cloud platform, enabling seamless
+              containerization workflows. Specialized in cloud architecture,
+              system integration, and scalable technology solutions for Fortune
+              500 clients.
+            </div>
+          </div>
+
+          <div class="job">
+            <div class="job-title">Senior Consultant</div>
+            <div class="company">Amazon</div>
+            <div class="duration">April 2009 - 2013</div>
+            <div class="description">
+              Developed AWS internal systems for smooth transformations and
+              processing to enable worldwide commercialization. Implemented
+              Global IEEE laws and standards compliance, modernized critical
+              infrastructure projects, and ensured AWS services met
+              international regulatory requirements for global deployment.
+            </div>
+          </div>
+
+          <div class="job">
+            <div class="job-title">Technology Specialist</div>
+            <div class="company">NADRA</div>
+            <div class="duration">June 2007 - 2009</div>
+            <div class="description">
+              Led the digitization of internal communications and technology
+              infrastructure for Pakistan's National Database and Registration
+              Authority. Implemented digital transformation initiatives and
+              modernized internal systems and processes.
+            </div>
+          </div>
+
+          <div class="job">
+            <div class="job-title">Technology Associate</div>
+            <div class="company">P@SHA</div>
+            <div class="duration">2007 (Post-Graduation)</div>
+            <div class="description">
+              Started career in technology sector working with Pakistan Software
+              Houses Association, gaining foundational experience in software
+              development and technology consulting.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact">
+        <h3>Get In Touch</h3>
+        <p>
+          📧
+          <a href="mailto:waleed.abid@example.com">waleed.abid@example.com</a>
+        </p>
+        <p>
+          💼
+          <a href="https://linkedin.com/in/waleed-abid" target="_blank"
+            >LinkedIn Profile</a
+          >
+        </p>
+      </div>
     </div>
-
-    <div class="project">
-      <h2>Project Two</h2>
-      <p>
-        Description of the project.
-        <a href="https://github.com/yourusername/project2" target="_blank"
-          >View on GitHub</a
-        >
-      </p>
-    </div>
-
-    <footer>
-      <p>📫 Contact: <a href="mailto:you@example.com">you@example.com</a></p>
-    </footer>
   </body>
 </html>
